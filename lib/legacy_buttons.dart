@@ -650,7 +650,7 @@ class _LegacyOutlineButtonState extends State<_LegacyOutlineButton>
     return AnimatedBuilder(
       animation: _controller,
       builder: (BuildContext context, Widget? child) {
-        return RaisedButton(
+        return LegacyRaisedButton(
           autofocus: widget.autofocus,
           textColor: widget.textColor,
           disabledTextColor: widget.disabledTextColor,
