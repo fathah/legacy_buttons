@@ -6,6 +6,8 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/material.dart';
 
+import 'LegacyRaisedButton.dart';
+
 // The total time to make the button's fill color opaque and change
 // its elevation. Only applies when highlightElevation > 0.0.
 const Duration _kPressDuration = Duration(milliseconds: 150);
@@ -436,7 +438,7 @@ class _LegacyOutlineButtonState extends State<_LegacyOutlineButton>
     return AnimatedBuilder(
       animation: _controller,
       builder: (BuildContext context, Widget? child) {
-        return RaisedButton(
+        return LegacyRaisedButton(
           autofocus: widget.autofocus,
           textColor: widget.textColor,
           disabledTextColor: widget.disabledTextColor,
